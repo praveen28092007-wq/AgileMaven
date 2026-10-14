@@ -1,7 +1,7 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 class LargestOfThreeTest {
     @Test
@@ -9,8 +9,10 @@ class LargestOfThreeTest {
         LargestOfThree obj = new LargestOfThree();
         assertEquals(9, obj.largest(4, 9, 6));
     }
-    void testLargest() {
+
+    @Test
+    void testLargestWhenFirstIsGreatest() {
         LargestOfThree obj = new LargestOfThree();
-        assertEquals(9, obj.largest(4));
+        assertEquals(19, obj.largest(10, 4, 6));
     }
 }
