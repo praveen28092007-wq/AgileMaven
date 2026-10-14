@@ -3,17 +3,14 @@ package com.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class OddOrEvenTest {
-
+class LargestOfThreeTest {
     @Test
-    void testEven() {
-        EvenOdd obj = new EvenOdd();
-        assertEquals("Even", obj.checkEvenOdd(8));
+    void testLargest() {
+        LargestOfThree obj = new LargestOfThree();
+        assertEquals(9, obj.largest(4, 9, 6));
     }
-
-    @Test
-    void testOdd() {
-        EvenOdd obj = new EvenOdd();
-        assertEquals("Odd", obj.checkEvenOdd(7));
+    void testLargest() {
+        LargestOfThree obj = new LargestOfThree();
+        assertEquals(9, obj.largest(4));
     }
 }
